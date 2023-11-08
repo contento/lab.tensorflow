@@ -20,16 +20,14 @@ Please make sure that:
 ## Setting the PIP environment
 
 ```shell
-python -m venv .venv
-# [MacOS M*] arch -x86_64 python3 -m venv .venv 
-
-./.venv/scripts/activate 
-# [bash]     source .venv/bin/activate
-
-python -m pip install -U -r requirements.txt
-
-# you may need to upgrade pip
-python -m pip install --upgrade pip
+# [MacOS M*] 
+# arch -x86_64 python3 -m venv .venv && \
+# [Windows ] 
+# ./.venv/scripts/activate && \
+python -m venv .venv  && \
+source .venv/bin/activate && \ 
+python -m pip install -U -r requirements.txt && \
+python -m pip install --upgrade pip 
 ```
 
 ### Using with Miniconda [OPTIONAL]
